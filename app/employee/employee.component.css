@@ -1,0 +1,111 @@
+.new-emp-form-div{
+    float: left;
+	width: 50%;
+	border: 1px solid #dddddd;
+	background-color: #f2f2f2
+}
+
+.employee-form-item{
+    width: 80%;
+    padding: 6px 5px;
+    margin-top:1px;
+      margin-bottom:8px;
+     margin-left:10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.employee-form-label{
+     font-family: cursive;
+	 margin-top:10px;
+      margin-left:10px;
+}
+
+.new-emp-form-div1{
+    width: 48%;
+    float: left;
+}
+.new-emp-form-div2{
+    width: 48%;
+    float: right;
+}
+
+.new-emp-form-button-div{
+    width: 95%;
+    padding: 6px 5px;
+    margin-top:1px;
+      margin-bottom:8px;
+     margin-left:10px;
+    display: inline-block;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+}
+
+.emp-form-button{
+     margin:auto;
+     float: right;
+     margin-right: 10px;
+      background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.save {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.save:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.clear {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+}
+
+.clear:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.error-div{
+    color: red;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+
+.search-result{
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  width:195px;
+  height: 20px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+}

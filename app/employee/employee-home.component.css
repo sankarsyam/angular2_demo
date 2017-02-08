@@ -1,0 +1,41 @@
+h3 {
+    color: red;
+    text-shadow: 4px 4px 3px grey;
+    padding-left: 10px;
+}
+
+.emp-home-div{
+    float: left;
+	width: 50%;
+    height: 300px;
+	border: 1px solid #dddddd;
+	background-color:white;
+    font-family: cursive;
+    color:#3B5998;
+    
+}
+.emp-home-form-div1{
+    width: 46%;
+    float: left;
+    height: 200px;
+    padding-left: 2px;
+    border: 1px solid #ccc;
+    margin-left: 16px;
+     box-shadow: 10px 10px 5px grey;
+}
+.emp-home-form-div2{
+    width: 46%;
+    float: right;
+    height: 200px;
+   padding-right: 2px;
+   border: 1px solid #ccc; 
+   margin-right: 16px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.div-title-span{
+    text-decoration:underline;
+    color: grey;
+    padding-left: 10px;
+    padding-top: 10px;
+}

@@ -1,0 +1,144 @@
+ul.pagination {
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    float: right;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 4px 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 2px solid #ddd;
+    font-weight: bold;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+.paginationDiv{
+  background-color:#AED6F1;
+  width: 50%;
+  margin-top: 20px;
+  border:3px solid #808080;
+  border-radius: 8px;
+}
+
+.pagination-size{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 30px;
+}
+
+.paginationdata{
+    width:100%; 
+    border-radius: 8px;
+}
+
+.items-per-page {
+    border: 1px solid #ccc;
+    width: 60px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+th {
+    background-color: #85C1E9;
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+tr{
+    height: 30px;
+}
+
+.employee-form-label{
+    font-family: cursive;
+	margin-top:10px;
+    margin-left:10px;
+    color: white;
+}
+
+.paginationdatadiv{
+    width:100%; 
+    height: 360px;
+    overflow: auto;
+    margin: auto;
+    border:3px 0px 3px 0px solid #808080;
+    background-color: white;
+}
+
+.page-details-display{
+    color: white;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.pagination-bottom-div{
+     width:100%; 
+     height: 40px;
+}
+
+.page-details-display-nodata{
+     width:100%; 
+    color: red;
+    font-family: cursive;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.pagination-no-datadiv{
+    width:100%; 
+    height: 360px;
+    border:3px 0px 3px 0px solid #808080;
+    background-color: white;
+    
+  
+}
+
+.pagination-no-datadiv-oops{
+width: 38px;
+    height: 65px;
+    position: relative;
+    animation-name: example;
+    /*background-image: url("../image/run.png");*/
+    background-repeat: no-repeat;
+    animation-duration: 20s;
+    
+}
+/*@keyframes example {
+    0%   {background-color:white;left:0px; top:0px;}
+    25%  { background-color:white; left:400px; top:0px;}
+    50%  {background-color:red;left:300px; top:250px;}
+    75%  {background-color:red;left:300px; top:150px;}
+    100% {background-color:red;left:300px; top:300px;}
+}*/
+
+@keyframes example {
+    0%   { background-image: url("../image/run.png");left:0px; top:0px;}
+    25%  {  background-image: url("../image/run.png");left:400px; top:0px;}
+    50%  { background-image: url("../image/run.png");left:300px; top:250px;}
+    75%  { background-image: url("../image/run.png");left:300px; top:150px;}
+    100% { background-image: url("../image/run.png");left:300px; top:420px;}
+}

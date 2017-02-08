@@ -1,0 +1,32 @@
+<div class="paginationDiv">
+  <div class="pagination-size">
+    <label for="pageSize" class="employee-form-label">Items per page</label>
+ <select [(ngModel)]="itemsPerpage" id="pageSize"  class="items-per-page" (change)="valueChanged()" placeholder="">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="20">20</option>
+     </select>  
+  </div>
+<div class="paginationdatadiv" *ngIf="totalRecords">
+<table class="paginationdata">
+<tr > <th *ngFor="let headder of titiles" (click)="sortColumn(headder.name)"> {{headder.name}}</th></tr>
+<tr *ngFor="let data of employees"><td >{{data.id}}</td><td >{{data.name}}</td><td >{{data.email}}</td><td >{{data.mobile}}</td></tr>
+ 
+</table>
+</div>
+<div class="pagination-no-datadiv" *ngIf="!totalRecords">
+   <div class="pagination-no-datadiv-oops"></div>
+</div>
+<div class="pagination-bottom-div">
+<span class="page-details-display" *ngIf="totalRecords">Showing {{pageStart}} to {{pageEnd}} of {{totalRecords}} records</span>
+<span class="page-details-display-nodata" *ngIf="!totalRecords">No records found </span>
+<ul class="pagination" *ngIf="totalRecords">
+   <li (click)="firstPage()"><a> << </a></li>
+  <li (click)="previousPage()"><a> < </a></li>
+  <li><a  *ngFor="let page of pages" (click)="movecurrentPage(page)" [ngClass]="{'active': (currentIndex == page)}">{{page}}</a></li>
+  <li (click)="nextPage()"><a > > </a></li>
+   <li (click)="lastPage()"><a> >> </a></li>
+</ul>
+</div>
+</div>

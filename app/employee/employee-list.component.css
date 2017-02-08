@@ -1,0 +1,33 @@
+.empTable {
+  
+    width: 50%;
+    border-collapse:collapse;
+    border-radius:6px;
+    -moz-border-radius:6px;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color:coral;
+    color: white;
+}
+
+.close-icon-list{
+    font-family:Garamond,'Apple Garamond','Lucida Sans Unicode';
+    color: red;
+    border-radius: 30px; 
+    background-color: chocolate;
+     border: 2px solid #a1a1a1;
+ 	padding-left:3px;
+    padding-right:0px;
+    background: #dddddd;
+    width: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,8 @@
+ 
+     <table class="empTable" >
+       <tr ><th class="head">Id</th><th class="head">Name</th><th class="head">Email</th><th class="head">Mobile</th><th class="head"></th></tr>
+       <tr class="empTablerow" *ngFor="let employee of employees" (click)="onSelect(employee)">
+                 <td>{{employee.id}}</td><td>{{employee.name}}</td>
+                 <td>{{employee.email}}</td><td>{{employee.mobile}}</td>
+                 <td><button class="close-icon-list" (click)="deleteEmployee(employee); $event.stopPropagation()">X</button></td></tr>
+     </table>
